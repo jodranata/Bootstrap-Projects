@@ -1,0 +1,110 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: teal;
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+} */
+
+
+#top-navbar .navbar-brand {
+    color: rgb(177, 243, 78);
+    font-size: 1.5rem;
+}
+
+#top-navbar {
+    font-weight: 100;
+}
+
+#top-navbar .nav-link {
+    color: whitesmoke;
+    transition: transform 0.2s ease-in;
+}
+
+#top-navbar .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(177, 243, 78);
+    transition: all .3s;
+}
+
+#top-navbar .nav-link:hover {
+    color: rgb(177, 243, 78);
+}
+
+#top-navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+.scrolled {
+    background: rgb(12, 168, 64);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    color: whitesmoke;
+    transition: all ease-in 0.2s;
+}
+
+.scrolled .nav-link:hover::after {
+    color: whitesmoke;
+}
+
+#top-navbar.scrolled .navbar-brand {
+    color: whitesmoke
+}
+
+
+#top-navbar.scrolled .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: whitesmoke;
+    transition: width .3s;
+    
+}
+
+#top-navbar.scrolled .nav-link:hover {
+    color: rgb(177, 243, 78);
+}
+
+#top-navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+#heading-text span {
+    color: rgb(177, 243, 78);
+    font-size: larger;    
+}
+
+#icon {
+    width: 100px;
+    height: 100px;
+}
+
+#content-text h2 {
+    font-size: 2rem;
+    color: rgb(177, 243, 78);
+}
+
+#content-text p {
+    color: rgb(177, 243, 78);
+    font-size: 1rem;    
+}
+
+section, section #content-text {
+    margin-bottom: 100px;
+}
